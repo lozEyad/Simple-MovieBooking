@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="405.0" style="-fx-background-color: #1a616f; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SignC">
+   <children>
+      <TextField fx:id="usernameField" layoutX="125.0" layoutY="147.0" prefHeight="26.0" prefWidth="160.0" promptText="Username" style="-fx-background-color: #1a616f;" />
+      <Text layoutX="125.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="________________________" />
+      <Text layoutX="125.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="________________________" />
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="97.0" layoutY="203.0">
+         <image>
+            <Image url="@key.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="97.0" layoutY="154.0">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="175.0" layoutY="235.0" mnemonicParsing="false" onAction="#SignUp" style="-fx-background-color: #1a616f;" text="Sign up" textFill="#030303">
+         <font>
+            <Font name="Adelle Sans Devanagari Heavy" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="165.0" layoutY="243.0">
+         <image>
+            <Image url="@right.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="173.0" layoutX="119.0" layoutY="7.0">
+         <image>
+            <Image url="@signup.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="292.0" layoutY="266.0" mnemonicParsing="false" onAction="#BacklToLog" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #1a616f;" text="Back to log in page" textAlignment="CENTER" textFill="#030303">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="286.0" layoutY="274.0">
+         <image>
+            <Image url="@Back.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordEntered" layoutX="127.0" layoutY="195.0" promptText="Password" style="-fx-background-color: #1a616f;" />
+      <Label fx:id="popUpLabel" alignment="CENTER" layoutX="9.0" layoutY="113.0" prefHeight="35.0" prefWidth="388.0" textFill="#a43e3e" />
+   </children>
+</AnchorPane>

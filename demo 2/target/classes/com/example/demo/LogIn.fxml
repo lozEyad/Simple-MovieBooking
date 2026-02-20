@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LogC">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #1a616f;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="45.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="260.21630859375">
+               <font>
+                  <Font name="Adelle Sans Devanagari Heavy" size="17.0" />
+               </font>
+            </Text>
+            <AnchorPane fx:id="LogScene" layoutY="6.0" prefHeight="500.0" prefWidth="700.0">
+               <children>
+                  <AnchorPane layoutX="350.0" layoutY="-3.0" prefHeight="506.0" prefWidth="351.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="157.0" layoutY="479.0">
+                           <image>
+                              <Image url="@setting.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="79.0" layoutY="186.0">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="63.0" layoutY="100.11000061035156" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to our login page!" textAlignment="CENTER" wrappingWidth="250.94744873046875" AnchorPane.topAnchor="77.5">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Heavy" size="17.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="usernameEntered" layoutX="112.0" layoutY="184.0" promptText="Username" style="-fx-background-color: #ffffff;" />
+                        <Text layoutX="119.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="______________________" />
+                        <Text layoutX="118.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="______________________" />
+                        <ImageView fitHeight="11.0" fitWidth="11.0" layoutX="157.0" layoutY="283.0">
+                           <image>
+                              <Image url="@log-in.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="169.0" layoutY="299.0" mnemonicParsing="false" onAction="#OpenSign" style="-fx-background-color: #ffffff;" text="Sign up" textFill="#1a616f" />
+                        <ImageView fitHeight="11.0" fitWidth="11.0" layoutX="157.0" layoutY="306.0">
+                           <image>
+                              <Image url="@add-user.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="79.0" layoutY="238.0">
+                           <image>
+                              <Image url="@key.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="168.0" layoutY="473.0" mnemonicParsing="false" onAction="#OpenAdminP" style="-fx-background-color: #ffffff;" text="Admin" textFill="#1a616f" />
+                        <Button layoutX="169.0" layoutY="276.0" mnemonicParsing="false" onAction="#UserLogin" style="-fx-background-color: #ffffff;" text="Log in" textFill="#1a616e" />
+                        <PasswordField fx:id="passwordEntered" layoutX="116.0" layoutY="237.0" promptText="Password" style="-fx-background-color: #ffffff;" />
+                        <Label fx:id="wrongLabel" alignment="CENTER" layoutX="21.0" layoutY="130.0" prefHeight="45.0" prefWidth="309.0" textFill="#a43e3e" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="9.0" layoutY="36.0" prefHeight="433.0" prefWidth="329.0">
+                     <children>
+                        <Text layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Booking System">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Heavy" size="25.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="240.0" fitWidth="262.0" layoutX="35.0" layoutY="115.0">
+                           <image>
+                              <Image url="@ticketss.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="415.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
